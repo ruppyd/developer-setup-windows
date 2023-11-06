@@ -7,13 +7,13 @@ This Powershell script installs and configures a development environment on a Wi
 > Prerequisite: script must run as Administrator and on Windows Powershell.
 
 ```
-PS> DevSetup.ps1 -FullName "Your Name" -Email "youremail@domain.com"
+DevSetup.ps1 -FullName "Your Name" -Email "youremail@domain.com"
 ```
 
 Add the `-NerdConfig` switch parameter to spice up your Powershell 7 terminal with Oh My Posh:
 
 ```
-PS> DevSetup.ps1 -FullName "Your Name" -Email "youremail@domain.com" -NerdConfig
+DevSetup.ps1 -FullName "Your Name" -Email "youremail@domain.com" -NerdConfig
 ```
 
 ## Roadmap
