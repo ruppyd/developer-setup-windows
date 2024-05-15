@@ -144,7 +144,8 @@ if (-Not (Get-AppxPackage | ? {$_.PackageFamilyName -eq "Microsoft.DesktopAppIns
 }
 
 # Install Development software via Winget
-winget install -s winget Microsoft.WindowsTerminal Microsoft.Powershell Git.Git Microsoft.VisualStudioCode Microsoft.DotNet.SDK.7
+winget install --id Git.Git -e --source winget
+winget install -s winget Microsoft.WindowsTerminal Microsoft.Powershell Microsoft.VisualStudioCode Microsoft.DotNet.SDK.7
 
 # Reload PATH environment
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
